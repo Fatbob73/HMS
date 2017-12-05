@@ -6,4 +6,9 @@ public class GoldPlan extends HealthInsurancePlan {
         setCoverage(0.8);
     }
 
+    @Override
+    public double computeMonthlyPremium(double salary) {
+        return salary * 0.7;
+    }
+
 }
