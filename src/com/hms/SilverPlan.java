@@ -6,4 +6,9 @@ public class SilverPlan extends HealthInsurancePlan {
         setCoverage(0.7);
     }
 
+    @Override
+    public double computeMonthlyPremium(double salary) {
+        return salary * 0.6;
+    }
+
 }
