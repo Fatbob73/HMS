@@ -1,9 +1,11 @@
 package com.hms;
 
-public class HealthInsurancePlan {
+public abstract class HealthInsurancePlan {
 
     private InsuranceBrand offeredBy;
     private double coverage;
+
+    public abstract double computeMonthlyPremium(double salary);
 
     public InsuranceBrand getOfferedBy() {
         return offeredBy;
