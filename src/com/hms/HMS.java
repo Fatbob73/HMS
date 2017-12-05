@@ -7,8 +7,12 @@ public class HMS {
         Patient patient = new Patient();
         patient.setInsurancePlan(insurancePlan);
 
-        double amount = 1000.0;
-        double[] payments = Billing.computePaymentAmount(patient, amount);
+        double staffPremium = insurancePlan.computeMonthlyPremium(100000);
+
+        System.out.println("Staff Premium: " + staffPremium);
+
+//        double amount = 1000.0;
+//        double[] payments = Billing.computePaymentAmount(patient, amount);
     }
 
 }
