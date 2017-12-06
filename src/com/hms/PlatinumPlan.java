@@ -8,8 +8,7 @@ public class PlatinumPlan extends HealthInsurancePlan {
 
     @Override
     public double computeMonthlyPremium(double salary) {
-//        return (salary * 0.08) / 12;
-        return  Math.round(((salary * 0.08) / 12) * 100D) / 100D;
+        return salary * 0.08;
     }
 
 }
