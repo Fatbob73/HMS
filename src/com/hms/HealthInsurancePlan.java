@@ -5,7 +5,7 @@ public abstract class HealthInsurancePlan {
     private InsuranceBrand offeredBy;
     private double coverage;
 
-    public abstract double computeMonthlyPremium(double salary);
+    public abstract double computeMonthlyPremium(double salary, int age, boolean smoking);
 
     public InsuranceBrand getOfferedBy() {
         return offeredBy;
