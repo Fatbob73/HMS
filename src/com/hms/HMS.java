@@ -7,7 +7,7 @@ public class HMS {
         Patient patient = new Patient();
         patient.setInsurancePlan(insurancePlan);
 
-        double staffPremium = insurancePlan.computeMonthlyPremium(100000);
+        double staffPremium = insurancePlan.computeMonthlyPremium(100000, 58, false);
 
         System.out.println("Staff Premium: " + staffPremium);
 
